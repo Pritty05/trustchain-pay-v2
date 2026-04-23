@@ -100,14 +100,41 @@ http://localhost:3000
 ### Home Page
 ![Home](screenshots/1-home.png)
 
-### Wallet Connected + Balance
-![Wallet Connected](screenshots/2-wallet-connected.png)
+### Home Page 2
+![Home 2](screenshots/2-home-2.png)
 
-### Transaction Successful
-![Transaction](screenshots/3-transaction-success.png)
+### Wallet Connecting
+![Wallet Connecting](screenshots/3-wallet-connecting.png)
 
-### Transaction History
-![History](screenshots/4-transaction-history.png)
+### Wallet Connected
+![Wallet Connected](screenshots/4-wallet-connected.png)
+
+### Balance Display
+![Balance](screenshots/5-balance-display.png)
+
+### Send XLM Form
+![Send XLM](screenshots/6-send-xlm.png)
+
+### Transaction Confirmed
+![Transaction Confirmed](screenshots/7-transaction-confirmed.png)
+
+### Transaction Hash
+![Transaction Hash](screenshots/8-transaction-hash.png)
+
+### Stellar Explorer
+![Stellar Explorer](screenshots/9-stellar-explorer.png)
+
+### Smart Contract
+![Smart Contract](screenshots/10-smart-contract.png)
+
+### Contract + Transaction History
+![Contract History](screenshots/11-contract-history.png)
+
+### Contract Called Successfully
+![Contract Success](screenshots/12-contract-success.png)
+
+### Contract on Stellar Explorer
+![Contract Explorer](screenshots/13-contract-explorer.png)
 
 ## 🔗 Resources
 - [Stellar Docs](https://developers.stellar.org)
