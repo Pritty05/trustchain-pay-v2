@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TrustChain Pay 🔗
 
-## Getting Started
+> A decentralized payment dApp built on the Stellar blockchain testnet.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8?style=flat-square&logo=tailwindcss)
+![Stellar](https://img.shields.io/badge/Stellar-Testnet-7C3AED?style=flat-square)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌐 Live Demo
+👉 https://trustchain-pay-v2.vercel.app
+
+## 📌 Project Description
+TrustChain Pay is a complete Stellar blockchain payment dApp. It enables users to connect their Stellar wallet, view their real-time XLM balance, send XLM transactions on testnet, and track their full transaction history — all in a clean, modern interface.
+
+## ✨ Features
+- 🔌 Connect / Disconnect Freighter wallet
+- 💰 Real-time XLM balance with auto-refresh
+- 💸 Send XLM to any Stellar address
+- ✅ Transaction success / failure feedback
+- 🔗 Transaction hash + Stellar Explorer link
+- 📜 Smart contract integration (Soroban)
+- 📋 Full transaction history
+- ⏳ Loading states and skeletons
+- ⚠️ Error handling
+- 📱 Responsive design
+
+## 🛠️ Tech Stack
+| Technology | Version | Purpose |
+|---|---|---|
+| Next.js | 16 | React Framework |
+| TypeScript | 5 | Type Safety |
+| Tailwind CSS | 3 | Styling |
+| Stellar SDK | 13 | Blockchain |
+| Freighter API | Latest | Wallet Connection |
+| React Icons | 5 | Icon Library |
+
+## 📁 Project Structure
+```
+trustchain-pay-v2/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── WalletConnection.tsx
+│   ├── BalanceDisplay.tsx
+│   ├── PaymentForm.tsx
+│   ├── TransactionHistory.tsx
+│   ├── ContractCall.tsx
+│   ├── BonusFeatures.tsx
+│   └── example-components.tsx
+├── lib/
+│   └── stellar-helper.ts
+├── contract/
+│   └── src/
+│       └── lib.rs
+├── .github/
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md
+│       └── feature_request.md
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 Smart Contract
+- Network: Stellar Testnet
+- Contract folder: `contract/src/lib.rs`
+- Built with Soroban SDK
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Setup Instructions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**1. Clone the repository**
+```bash
+git clone https://github.com/Pritty05/trustchain-pay-v2.git
+cd trustchain-pay-v2
+```
 
-## Learn More
+**2. Install dependencies**
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+**3. Run the development server**
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**4. Open in browser**
+```
+http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📋 Requirements
+- [Freighter Wallet](https://www.freighter.app/) browser extension installed
+- Freighter set to **Testnet** network
+- Testnet XLM — get free XLM at [Stellar Laboratory](https://laboratory.stellar.org)
 
-## Deploy on Vercel
+## 📸 Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Home Page
+![Home](screenshots/1-home.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Wallet Connected + Balance
+![Wallet Connected](screenshots/2-wallet-connected.png)
+
+### Transaction Successful
+![Transaction](screenshots/3-transaction-success.png)
+
+### Transaction History
+![History](screenshots/4-transaction-history.png)
+
+## 🔗 Resources
+- [Stellar Docs](https://developers.stellar.org)
+- [Stellar Laboratory](https://laboratory.stellar.org) — Fund testnet wallet
+- [Stellar Expert](https://stellar.expert/explorer/testnet) — View transactions
+- [Freighter Wallet](https://www.freighter.app/)
+
+## 🆘 Troubleshooting
+**Wallet won't connect?**
+- Make sure Freighter is installed
+- Switch Freighter to Testnet network
+- Refresh the page
+
+**Balance shows 0?**
+- Fund your testnet account at [Stellar Laboratory](https://laboratory.stellar.org)
+- Click the Refresh button
+
+**Transaction fails?**
+- Keep at least 1 XLM as reserve
+- Make sure recipient address is valid
+- Confirm you are on Testnet
+
+---
+Made with ❤️ for the Stellar Community 🚀
